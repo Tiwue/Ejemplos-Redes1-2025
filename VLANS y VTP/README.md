@@ -67,6 +67,7 @@ configure terminal
 vtp domain usac
 vtp password 1234
 vtp mode server
+vtp version 2
 
 # Crear VLANs
 vlan 10
@@ -99,6 +100,7 @@ configure terminal
 vtp domain usac
 vtp password 1234
 vtp mode client
+vtp version 2
 ```
 
 Los switches clientes recibirán automáticamente las VLANs desde el switch Servidor.
