@@ -64,9 +64,9 @@ enable
 configure terminal
 
 # Configurar el dominio VTP y la contraseña
+vtp mode server
 vtp domain usac
 vtp password 1234
-vtp mode server
 vtp version 2
 
 # Crear VLANs
@@ -97,9 +97,9 @@ enable
 configure terminal
 
 # Configurar el dominio VTP y la contraseña (deben ser iguales al Switch Server)
+vtp mode client
 vtp domain usac
 vtp password 1234
-vtp mode client
 vtp version 2
 ```
 
